@@ -3,6 +3,8 @@
     <showing></showing>
     <newmovie></newmovie>
     <commingsoon></commingsoon>
+    <findmovie></findmovie>
+    <navtype></navtype>
   </div>
 </template>
 
@@ -10,11 +12,15 @@
   import showing from './showing/showing'
   import newmovie from './newmovies/newmovie'
   import commingsoon from './comingsoon/commingsoon'
+  import findmovie from './findmovie/findmovie'
+  import navtype from './navtype/navtype'
   export default {
     components: {
       showing,
       newmovie,
-      commingsoon
+      commingsoon,
+      findmovie,
+      navtype
     }
   }
 </script>
