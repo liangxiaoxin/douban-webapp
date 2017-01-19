@@ -20,8 +20,10 @@ import group from './components/group/group'
 // 定义路由
 const router = new VueRouter({
   linkActiveClass: 'active',
+  // 消除地址#号
   mode: 'history',
   base: __dirname,
+  // 路由配置
   routes: [
     {
       path: '/',

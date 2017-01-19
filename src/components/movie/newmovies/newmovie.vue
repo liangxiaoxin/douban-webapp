@@ -1,7 +1,7 @@
 <template>
-  <section class="showing">
+  <section class="newmovie">
     <header>
-      <h2>影院热映</h2>
+      <h2>新片速递</h2>
       <a href="#" class="more">更多</a>
     </header>
     <div class="section-content" ref="moviesUl">
@@ -37,7 +37,7 @@
       }
     },
     methods: {
-        // 使用better-scroll实现左右滑动
+      // 使用better-scroll实现左右滑动
       _initScroll() {
         this.moviesScroll = new BScroll(this.$refs.moviesUl, {
           scrollX: true,
@@ -47,7 +47,7 @@
     },
     computed: {
 
-        // 实现评分
+      // 实现评分
       starClasses: function () {
         for (let i = 0; i < this.movies.length; i++) {
           let result = []
@@ -66,7 +66,8 @@
       }
     },
     created: function () {
-      this.$http.jsonp('https://api.douban.com/v2/movie/in_theaters?count=8', {}, {
+        // 新片榜API出现问题，换成top250Api
+      this.$http.jsonp('https://api.douban.com/v2/movie/top250?count=8', {}, {
         headers: {},
         emulateJSON: true
       }).then(function (response) {
@@ -125,7 +126,6 @@
             line-height: .94rem
             word-wrap: normal
             color: #111111
-            font-size: 14px
           .rating
             color: #aaa;
             line-height: .94rem
