@@ -1,6 +1,43 @@
 # db-webapp
 
-> vue project for douban web app
+> vue2.0 + vue-router + vue-resource  简单实现实现豆瓣webapp
+
+目前实现了movie首页，路由切换，数据均来自[豆瓣API](https://developers.douban.com/wiki/?title=guide)
+
+demo地址： 
+[https://github.com/liangxiaoxin/douban-webapp](https://github.com/liangxiaoxin/douban-webapp)
+
+demo演示：
+
+![db-webapp](./moviegif.gif)
+
+主路由：
+
+	// 路由配置
+	  routes: [
+	    {
+	      path: '/',
+	      component: movie
+	    },
+	    {
+	      path: '/movie',
+	      component: movie
+	    },
+	    {
+	      path: '/book',
+	      component: book
+	    },
+	    {
+	      path: '/broadcast',
+	      component: broadcast
+	    },
+	    {
+	      path: '/group',
+	      component: group
+	    }
+	  ]
+
+第三方插件：better-scorll.js 实现左右滑动
 
 ## Build Setup
 
@@ -20,5 +57,3 @@ npm run unit
 # run all tests
 npm test
 ```
-
-For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).

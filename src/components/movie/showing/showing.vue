@@ -74,9 +74,6 @@
       }).then(function (response) {
         // 这里是处理正确的回调
         this.movies = response.data.subjects
-        console.log(this.movies)
-        console.log(this.$refs.moviesUl)
-
         this.$nextTick(() => {
           // DOM更新完成后调用
           this._initScroll()

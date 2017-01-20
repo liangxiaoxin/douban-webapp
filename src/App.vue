@@ -245,6 +245,8 @@
               flex: 1
               font-size: 15px;
               color: #42bd56;
+            a:first-child
+              border-right: 1px solid #e5e5e5
           .nav-item:first-child
             border-top: 1px solid #f3f3f3
 

@@ -32,11 +32,6 @@ const router = new VueRouter({
     {
       path: '/movie',
       component: movie
-      // children: [
-      //   {path: '1', component: moviecontent2},
-      //   {path: '2', component: moviecontent2},
-      //   {path: '3', component: moviecontent2}
-      // ]
     },
     {
       path: '/book',
@@ -58,3 +53,4 @@ new Vue({
   components: { App },
   router: router
 })
+
