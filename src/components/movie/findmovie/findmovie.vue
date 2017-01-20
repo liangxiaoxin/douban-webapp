@@ -66,6 +66,7 @@
   }
 </script>
 <style lang="stylus" rel="stylesheet/stylus">
+  @import "../../../common/css/common.css"
   .findmovie
     padding-top: 10px
     overflow: hidden;

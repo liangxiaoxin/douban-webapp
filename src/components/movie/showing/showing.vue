@@ -51,7 +51,9 @@
       starClasses: function () {
         for (let i = 0; i < this.movies.length; i++) {
           let result = []
+          // 满星有多少个
           let fullCount = Math.floor(this.movies[i].rating.average / 2)
+          // 灰星有多少个
           let greyCount = LENGTH - fullCount
           for (let j = 0; j < fullCount; j++) {
             result.push(CLS_FULL)
@@ -74,7 +76,9 @@
         this.movies = response.data.subjects
         console.log(this.movies)
         console.log(this.$refs.moviesUl)
+
         this.$nextTick(() => {
+          // DOM更新完成后调用
           this._initScroll()
         })
       }, function (response) {

@@ -5,6 +5,7 @@
     <commingsoon></commingsoon>
     <findmovie></findmovie>
     <navtype></navtype>
+    <download></download>
   </div>
 </template>
 
@@ -14,13 +15,15 @@
   import commingsoon from './comingsoon/commingsoon'
   import findmovie from './findmovie/findmovie'
   import navtype from './navtype/navtype'
+  import download from './download/download'
   export default {
     components: {
       showing,
       newmovie,
       commingsoon,
       findmovie,
-      navtype
+      navtype,
+      download
     }
   }
 </script>
