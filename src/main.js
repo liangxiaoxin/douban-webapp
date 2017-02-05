@@ -27,7 +27,7 @@ const router = new VueRouter({
   routes: [
     {
       path: '/',
-      component: movie
+      redirect: '/movie'
     },
     {
       path: '/movie',
