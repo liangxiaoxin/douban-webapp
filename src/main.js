@@ -12,45 +12,13 @@ import VueResource from 'vue-resource'
 Vue.use(VueResource)
 
 // 引入组件
-import movie from './components/movie/movie'
-import book from './components/book/book'
-import broadcast from './components/broadcast/broadcast'
-import group from './components/group/group'
+import routerConfig from './router.config'
 
 // 定义路由
-const router = new VueRouter({
-  linkActiveClass: 'active',
-  // 消除地址#号
-  mode: 'history',
-  base: __dirname,
-  // 路由配置
-  routes: [
-    {
-      path: '/',
-      redirect: '/movie'
-    },
-    {
-      path: '/movie',
-      component: movie
-    },
-    {
-      path: '/book',
-      component: book
-    },
-    {
-      path: '/broadcast',
-      component: broadcast
-    },
-    {
-      path: '/group',
-      component: group
-    }
-  ]
-})
+const router = new VueRouter(routerConfig)
 new Vue({
+  router,
   el: '#app',
-  template: '<App/>',
-  components: { App },
-  router: router
+  render: h => h(App)
 })
 
