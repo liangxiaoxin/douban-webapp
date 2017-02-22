@@ -32,7 +32,10 @@
   const CLS_GREY = 'grey'
   export default {
     //    接收两个参数  1 接收标题 2 接收一个url  接收参数可改可变
-    props: ['Title', 'url'],
+    props: {
+      url: String,
+      Title: String
+    },
     data() {
       return {
         movies: [],
@@ -45,12 +48,12 @@
       _initScroll() {
         this.moviesScroll = new BScroll(this.$refs.moviesUl, {
           scrollX: true,
+          eventPassthrough: 'vertical',
           click: true
         })
       }
     },
     computed: {
-
       // 实现评分
       starClasses: function () {
         for (let i = 0; i < this.movies.length; i++) {
@@ -72,7 +75,7 @@
     created: function () {
       let opt = {
         params: {
-          'count': 6,
+          'count': 8,
           'start': 0,
           'apikey': '00fa6c0654689a0202ef4412fd39ce06'
         }

@@ -43,9 +43,6 @@
   </div>
 </template>
 <script>
-  //    导入顶部广告组件
-  //    导入星星组件
-  //    导入底部
   export default{
     data() {
       return {

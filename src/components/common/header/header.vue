@@ -19,32 +19,35 @@
         </ul>
         <span class="search-btn" @click="showSearch"></span>
       </nav>
-      <div class="search-wrapper"  v-show="isShowSearch">
-        <span class="close" @click="showSearch">关闭</span>
-        <form action="/search" method="GET" class="form">
-          <div>
-            <input type="search" name="query">
-          </div>
-        </form>
-        <ul class="nav-list">
-          <li v-for="nav in NavData">
-            <a href="">
-              <strong :style="{'color': nav.color}">{{nav.title}}</strong>
-              <span>{{nav.description}}</span>
-            </a>
-          </li>
-        </ul>
-        <div class="navBottom">
-          <div class="nav-item">
-            <a href="">注册账号</a>
-            <a href="">登录豆瓣</a>
-          </div>
-          <div class="nav-item">
-            <a href="">使用桌面版</a>
-            <a href="">使用豆瓣APP</a>
+      <transition enter-active-class="animated fadeInLeft"
+                  leave-active-class="animated fadeOutRight">
+        <div class="search-wrapper"  v-show="isShowSearch">
+          <span class="close" @click="showSearch">关闭</span>
+          <form action="/search" method="GET" class="form">
+            <div>
+              <input type="search" name="query">
+            </div>
+          </form>
+          <ul class="nav-list">
+            <li v-for="nav in NavData">
+              <a href="">
+                <strong :style="{'color': nav.color}">{{nav.title}}</strong>
+                <span>{{nav.description}}</span>
+              </a>
+            </li>
+          </ul>
+          <div class="navBottom">
+            <div class="nav-item">
+              <a href="">注册账号</a>
+              <a href="">登录豆瓣</a>
+            </div>
+            <div class="nav-item">
+              <a href="">使用桌面版</a>
+              <a href="">使用豆瓣APP</a>
+            </div>
           </div>
         </div>
-      </div>
+      </transition>
     </div>
   </div>
 </template>
