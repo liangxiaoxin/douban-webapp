@@ -12,8 +12,8 @@
 <script type="text/ecmascript-6">
   import movieItem from './movieItem'
 
-  import navtype from './navtype/navtype'
-  import download from './download/download'
+  import navtype from '../common/navtype/navtype.vue'
+  import download from '../common/download/download'
   export default {
     name: 'movie',
     data() {

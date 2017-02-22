@@ -4,12 +4,13 @@
     <Vheader></Vheader>
     <!--渲染区-->
     <div class="page">
-      <router-view></router-view>
+      <transition enter-active-class="animated flipInY"><router-view></router-view></transition>
     </div>
+
   </div>
 </template>
 <script>
-  import Vheader from './common/components/header/header'
+  import Vheader from './components/common/header/header'
   export default {
     name: 'app',
     data() {

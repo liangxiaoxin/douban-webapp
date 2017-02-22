@@ -16,7 +16,7 @@
   export default {}
 </script>
 
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
   .download-wrapper
     padding: 0 0 20px 0;
     margin-top: 50px;

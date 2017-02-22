@@ -57,7 +57,6 @@
           </ul>
           <a class="cl" href="#" v-cloak v-show="bookData.total">更多音乐结果( {{bookData.total}} )</a>
         </li>
-        <!--bug 当没有数据的时候 li会闪一下再消失-->
         <span v-if='dataShow&&bookShow&&musicShow?false:true'>没有搜索到,换个关键词吧。</span>
 
       </ul>
@@ -66,7 +65,6 @@
 
 </template>
 <script>
-  //     导入星星
   export default {
     name: 'search',
     data() {

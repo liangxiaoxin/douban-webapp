@@ -22,7 +22,7 @@
       }
   }
 </script>
-<style lang="stylus" rel="stylesheet/stylus">
+<style lang="stylus" rel="stylesheet/stylus" scoped>
   .navtype
     padding-top: 10px
     overflow: hidden;
@@ -42,7 +42,6 @@
         padding: 1.12rem 0 1.88rem;
         color: #eee;
         font-size: .9rem;
-        overflow: hidden;
         li
           float: left
           width: 40%

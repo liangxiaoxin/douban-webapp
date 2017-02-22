@@ -14,6 +14,14 @@ Vue.use(VueResource)
 // 引入组件
 import routerConfig from './router.config'
 
+// 动画库
+import '../static/css/animate.min.css'
+
+// 引入mint-ui实现轮播
+import Mint from 'mint-ui'
+import 'mint-ui/lib/style.css'
+Vue.use(Mint)
+
 // 定义路由
 const router = new VueRouter(routerConfig)
 new Vue({

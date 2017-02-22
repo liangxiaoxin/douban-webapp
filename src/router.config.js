@@ -7,7 +7,7 @@ import book from './components/book/book'
 import broadcast from './components/broadcast/broadcast'
 import group from './components/group/group'
 import movieId from './components/movie/movie.id'
-import search from './common/components/search/search'
+import search from './components/common/search/search'
 
 // 导出配置
 export default {

@@ -4,8 +4,8 @@
 
 目前实现了movie首页，路由切换，数据均来自[豆瓣API](https://developers.douban.com/wiki/?title=guide)
 
-demo地址： 
-[https://github.com/liangxiaoxin/douban-webapp](https://github.com/liangxiaoxin/douban-webapp)
+demo地址：
+[https://liangxiaoxin.github.io/douban-webapp/](https://liangxiaoxin.github.io/douban-webapp/)
 
 demo演示：
 

@@ -14,7 +14,9 @@
   "dependencies": {
     "vue": "^2.1.0",
     "vue-router": "^2.1.1",
-    "better-scroll": "^0.1.11"
+    "vue-resource": "^v1.0.3",
+    "better-scroll": "^0.1.11",
+    "mint-ui": "^2.1.0"
   },
   "devDependencies": {
     "autoprefixer": "^6.4.0",
@@ -70,7 +72,6 @@
     "stylus-loader": "^2.4.0",
     "url-loader": "^0.5.7",
     "vue-loader": "^10.0.0",
-    "vue-resource": "^v1.0.3",
     "vue-style-loader": "^1.0.0",
     "vue-template-compiler": "^2.1.0",
     "webpack": "^1.13.2",
